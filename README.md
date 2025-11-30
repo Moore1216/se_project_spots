@@ -10,3 +10,6 @@ A Image Based webpage , that allows users to upload and post there own images
 - Media Quaries
 - Import Links
   
+## Deployment
+- GitHub Pages
+- Deployed Link: https://moore1216.github.io/se_project_spots/
