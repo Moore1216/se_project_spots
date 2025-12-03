@@ -62,6 +62,7 @@
 }
 
 .profile__add-btn {
+    margin-top: auto;
     margin-left: auto;
     width: 157px;
     height: 52px;
@@ -106,10 +107,11 @@
 
     .profile__column {
         margin: 0 0 20px;
+        align-items: center ;
     }
 
     .profile__add-btn {
         margin: 0;
-        max-width: 100%;
+        width: 100%;
     }
 }
