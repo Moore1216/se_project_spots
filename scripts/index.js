@@ -16,23 +16,31 @@ const newPostBtnClose = newPostModal.querySelector(".modal__close-btn");
 const profileNameEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description");
 
+function openModal(modal) {
+  modal.classList.add("modal_is-opened");
+}
+
+function closeModal(modal) {
+  modal.classList.remove("modal_is-opened");
+}
+
 editProfileBtn.addEventListener("click", function () {
   editProfileNameInput.value = profileNameEl.textContent;
   editProfileDescriptionInput.value = profileDescriptionEl.textContent;
 
-  editProfileModal.classList.add("modal_is-opened");
+  openModal(editProfileModal);
 });
 
 newPostBtn.addEventListener("click", function () {
-  newPostModal.classList.add("modal_is-opened");
+  openModal(newPostModal);
 });
 
 editProfileBtnClose.addEventListener("click", function () {
-  editProfileModal.classList.remove("modal_is-closed");
+  closeModal(editProfileModal);
 });
 
 newPostBtnClose.addEventListener("click", function () {
-  newPostModal.classList.remove("modal_is-closed");
+  closeModal(newPostModal);
 });
 
 function handleEditProfileSubmit(evt) {
@@ -40,7 +48,26 @@ function handleEditProfileSubmit(evt) {
 
   profileNameEl.textContent = editProfileNameInput.value;
   profileDescriptionEl.textContent = editProfileDescriptionInput.value;
-  editProfileModal.classList.remove("modal_is-closed");
+  editProfileModal.classList.remove("modal_is-opened");
 }
 
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
+
+// Select the necessary form elements. You should select
+// these from inside the modal, not the document.
+const addCardFormElement = // Use querySelector()
+const nameInput = // Use querySelector()
+const linkInput = // Use querySelector()
+
+// Create the form submission handler.
+function handleAddCardSubmit(evt) {
+  // Prevent default browser behavior.
+  evt.preventDefault(); 
+ 
+  // Log both input values to the console.
+
+  // Close the modal.
+}
+
+// Create the submit listener.
+addCardFormElement.addEventListener('submit', handleAddCardSubmit);
