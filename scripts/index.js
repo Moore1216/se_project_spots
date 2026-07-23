@@ -52,22 +52,3 @@ function handleEditProfileSubmit(evt) {
 }
 
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
-
-// Select the necessary form elements. You should select
-// these from inside the modal, not the document.
-const addCardFormElement = // Use querySelector()
-const nameInput = // Use querySelector()
-const linkInput = // Use querySelector()
-
-// Create the form submission handler.
-function handleAddCardSubmit(evt) {
-  // Prevent default browser behavior.
-  evt.preventDefault(); 
- 
-  // Log both input values to the console.
-
-  // Close the modal.
-}
-
-// Create the submit listener.
-addCardFormElement.addEventListener('submit', handleAddCardSubmit);
